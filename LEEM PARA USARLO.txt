@@ -5,6 +5,7 @@ instalamos el entorno virtual
  para activar el entorno virtual
 
 pip install -r requirements.txt
+instalamos las dependencias de la aplicacion -- importante
 
 python .\app_v13_ok.py 
 para ejecutar la aplicacion
