@@ -1,0 +1,5 @@
+#mi entorno virtual no lo sumo porque trae problemas con otras maquinas hay que crearlo en la maquina propia
+venv
+
+#esto es comentario los demas archivos son importantes
+#si el archivo sistema.sql trae problemas no usarlo.

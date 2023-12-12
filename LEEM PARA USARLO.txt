@@ -1,0 +1,22 @@
+python -m venv env
+instalamos el entorno virtual
+
+.\venv\Scripts\activate  
+ para activar el entorno virtual
+
+pip install -r requirements.txt
+
+python .\app_v13_ok.py 
+para ejecutar la aplicacion
+
+ATENCION...
+EN LA BASE DE DATOS CREAR LA BD SISTEMAS Y LA TABLA EMPLEADOS(MIRAR EL WORD)
+
+deactivate para apagar el entorno virtual
+
+python .\app_v13_ok.py 
+para ejecutar la aplicacion
+
+tengo que tener el servicio del mysql funcionando.
+, luego al hacer modificaciones tengo que verificar que se esta modificando la base de datos en el 
+mysql workbench y comprobar que pueda, crear, editar, borrar perfectamente.

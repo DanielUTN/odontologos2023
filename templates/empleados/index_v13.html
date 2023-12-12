@@ -1,0 +1,35 @@
+{% include 'header_v13.html' %}
+<br />
+<a href="{{ url_for('create') }}" class="btn btn-success">
+  Ingresar nuevo Afiliad@
+</a>
+<br />
+<br />
+<table class="table table-hover">
+  <thead class="thead-dark">
+    <tr>
+      <th>#</th>
+      <th>Foto</th>
+      <th>Nombre</th>
+      <th>Correo</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for empleado in empleados %}
+    <tr>
+      <td class="ordenartd">{{empleado[0]}}</td>
+      <td class="ordenartd">
+        <img class="img-thumbnail" width="100" src="uploads/{{empleado[3]}}" alt="">
+      </td>
+      <td class="ordenartd">{{empleado[1]}}</td>
+      <td class="ordenartd">{{empleado[2]}}</td>
+      <td class="ordenartd">
+        <a class="btn btn-warning" href="/modify/{{empleado[0]}}">Editar</a>
+        <a id="btnConfirm" class="btn btn-danger" href="/delete/{{empleado[0]}}">Borrar</a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% include 'footer_v13.html' %}

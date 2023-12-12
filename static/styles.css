@@ -1,0 +1,12 @@
+
+/* ESTO DE FLOR, segun documentacion se aconseja no usar !important */
+/* td {
+  vertical-align: middle !important;
+}
+ */
+
+ /* esto es agregado mio */
+td.ordenartd {
+  vertical-align: middle;
+
+}
